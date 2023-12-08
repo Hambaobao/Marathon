@@ -39,53 +39,53 @@ An example of test looks as follows. This is a toy example.
 # Leaderboard
 
 + Methods (optimizing methods):
-  + Vanilla
-  + RAG (Retrieval Augmented Generation) 
-  + PC (LongLLMLingua Prompt Compression)
+  + 🏐 Vanilla
+  + 🎾 RAG (Retrieval Augmented Generation) 
+  + 🏀 PC (LongLLMLingua Prompt Compression)
 + Embedding Models:
-  + OpenAI: text-embedding-ada-002
-  + Jina: Jina-Embedding-base
+  + 🍿 OpenAI: text-embedding-ada-002
+  + 🍔 Jina: Jina-Embedding-base
 
-|    Model     |Paramters | Context Window | Method | Embedding | Avg. Accuracy |
-| :----------  |:----: | :----: | :----: | :-------: | :-----------: |
-| **GPT-4**  | - | 128K  |  Vanilla   |   -    |     **78.59**     |
-| Yi-chat  | 34B | 200K  |  RAG   |   Jina    |     63.81     |
-| Yi-chat  | 34B | 200K  |  RAG   |  OpenAI   |     63.56     |
-| Tutu2-DPO | 70B | 8K | RAG | OpenAI | 61.97 |
-| Tutu2-DPO | 70B | 8K | RAG | Jina | 61.52 |
-| Qwen | 14B | 8K | RAG | Jina |58.12|
-| **ChatGPT** | - | 16K | Vanilla | - |**57.37**|
-| Yi-chat  | 34B | 200K | Vanilla | - | 55.91 |
-| Beluga2 | 70B | 4K | RAG | Jina |55.72|
-| ChatGLM3  | 6B | 32K | Vanilla | - | 55.05 |
-| Zephyr | 7B | 32K | RAG | Jina |53.79|
-| Qwen | 14B | 8K | RAG | OpenAI |53.46|
-| Beluga2 | 70B | 4K | PC | - |52.29|
-| Mistral | 7B | 32K | RAG | Jina |52.04|
-| Alfred | 40B | 8K | RAG | OpenAI |51.35|
-| Alfred | 40B | 8K | RAG | Jina |51.24|
-| ChatGLM3 | 6B | 32K | RAG | OpenAI |50.99|
-| ChatGLM3 | 6B | 32K | RAG | Jina |50.60|
-| Mistral | 7B | 32K | RAG | OpenAI |50.18|
-| Zephyr | 7B | 32K | RAG | - |49.63|
-| Beluga2  | 70B | 4K | Vanilla | - | 49.51 |
-| Yi | 34B | 200K | PC | - |48.66|
-| Beluga2 | 70B | 4K | RAG | OpenAI |48.24|
-| ChatGLM3  | 6B | 32K | PC | - | 47.91 |
-| Tulu2-DPO | 70B | 8K | PC | - |46.56|
-| Qwen | 14B | 8K | PC | - |44.12|
-| Mistral   | 7B | 32K | Vanilla | - | 39.81 |
-| Qwen    | 14B | 8K | Vanilla | - | 39.27 |
-| Alfred | 40B | 8K | PC | - |38.82|
-| Zephyr    | 7B | 32K | Vanilla | - | 37.97 |
-| Tulu2-DPO | 7B | 8K | Vanilla | - | 37.92 |
-| Longchat | 13B | 16K | RAG | Jina |37.78|
-| Alfred   | 40B | 8K | Vanilla | - | 37.31 |
-| Mistral   | 7B | 32K | PC | - | 37.01 |
-| Longchat | 13B | 16K | Vanilla | - | 35.87 |
-| Longchat | 13B | 16K | PC | - | 35.61 |
-| Zephyr    | 7B | 32K | PC | - | 30.23 |
-| Longchat | 13B | 16K | RAG | OpenAI |29.95|
+|Tag|    Model     |Paramters | Context Window | Method | Embedding | Avg. Accuracy ⬆️ |
+|:-----| :----------  |:----: | :----: | :----- | :-------- | :-----------: |
+| 🏐 | **GPT-4** | - | 128K  | 🏐 Vanilla |   -    |     **78.59**     |
+| 🎾🍔 | Yi-chat  | 34B | 200K  | 🎾 RAG | 🍔 Jina |     63.81     |
+| 🎾🍿 | Yi-chat  | 34B | 200K  | 🎾 RAG | 🍿 OpenAI |     63.56     |
+| 🎾🍿 | Tutu2-DPO | 70B | 8K | 🎾 RAG | 🍿 OpenAI | 61.97 |
+| 🎾🍔 | Tutu2-DPO | 70B | 8K | 🎾 RAG | 🍔 Jina | 61.52 |
+| 🎾🍔 | Qwen | 14B | 8K | 🎾 RAG | 🍔 Jina |58.12|
+| 🏐 | **ChatGPT** | - | 16K | 🏐 Vanilla | - |**57.37**|
+| 🏐 | Yi-chat  | 34B | 200K | 🏐 Vanilla | - | 55.91 |
+| 🎾🍔 | Beluga2 | 70B | 4K | 🎾 RAG | 🍔 Jina |55.72|
+| 🏐 | ChatGLM3  | 6B | 32K | 🏐 Vanilla | - | 55.05 |
+| 🎾🍔 | Zephyr | 7B | 32K | 🎾 RAG | 🍔 Jina |53.79|
+| 🎾🍿 | Qwen | 14B | 8K | 🎾 RAG | 🍿 OpenAI |53.46|
+| 🏀 | Beluga2 | 70B | 4K | 🏀 PC | - |52.29|
+| 🎾🍔 | Mistral | 7B | 32K | 🎾 RAG | 🍔 Jina |52.04|
+| 🎾🍿 | Alfred | 40B | 8K | 🎾 RAG | 🍿 OpenAI |51.35|
+| 🎾🍔 | Alfred | 40B | 8K | 🎾 RAG | 🍔 Jina |51.24|
+| 🎾🍿 | ChatGLM3 | 6B | 32K | 🎾 RAG | 🍿 OpenAI |50.99|
+| 🎾🍔 | ChatGLM3 | 6B | 32K | 🎾 RAG | 🍔 Jina |50.60|
+| 🎾🍿 | Mistral | 7B | 32K | 🎾 RAG | 🍿 OpenAI |50.18|
+| 🎾🍿 | Zephyr | 7B | 32K | 🎾 RAG | 🍿 OpenAI |49.63|
+| 🏐 | Beluga2  | 70B | 4K | 🏐 Vanilla | - | 49.51 |
+| 🏀 | Yi | 34B | 200K | 🏀 PC | - |48.66|
+| 🎾🍿 | Beluga2 | 70B | 4K | 🎾 RAG | 🍿 OpenAI |48.24|
+| 🏀 | ChatGLM3  | 6B | 32K | 🏀 PC | - | 47.91 |
+| 🏀 | Tulu2-DPO | 70B | 8K | 🏀 PC | - |46.56|
+| 🏀 | Qwen | 14B | 8K | 🏀 PC | - |44.12|
+| 🏐 | Mistral   | 7B | 32K | 🏐 Vanilla | - | 39.81 |
+| 🏐 | Qwen    | 14B | 8K | 🏐 Vanilla | - | 39.27 |
+| 🏀 | Alfred | 40B | 8K | 🏀 PC | - |38.82|
+| 🏐 | Zephyr    | 7B | 32K | 🏐 Vanilla | - | 37.97 |
+| 🏐 | Tulu2-DPO | 7B | 8K | 🏐 Vanilla | - | 37.92 |
+| 🎾🍔 | Longchat | 13B | 16K | 🎾 RAG | 🍔 Jina |37.78|
+| 🏐 | Alfred   | 40B | 8K | 🏐 Vanilla | - | 37.31 |
+| 🏀 | Mistral   | 7B | 32K | 🏀 PC | - | 37.01 |
+| 🏐 | Longchat | 13B | 16K | 🏐 Vanilla | - | 35.87 |
+| 🏀 | Longchat | 13B | 16K | 🏀 PC | - | 35.61 |
+| 🏀 | Zephyr    | 7B | 32K | 🏀 PC | - | 30.23 |
+| 🎾🍿 | Longchat | 13B | 16K | 🎾 RAG | 🍿 OpenAI |29.95|
 
 
 
