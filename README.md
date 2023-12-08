@@ -46,7 +46,7 @@ An example of test looks as follows. This is a toy example.
   + 🍿 OpenAI: text-embedding-ada-002
   + 🍔 Jina: Jina-Embedding-base
 
-|Tag|    Model     |Paramters | Context Window | Method | Embedding | Avg. Accuracy ⬆️ |
+|Tag|    Model     |Parameters | Context Window | Method | Embedding | Avg. Accuracy ⬆️ |
 |:-----| :----------  |:----: | :----: | :----- | :-------- | :-----------: |
 | 🏐 | **GPT-4** | - | 128K  | 🏐 Vanilla |   -    |     **78.59**     |
 | 🎾🍔 | Yi-chat  | 34B | 200K  | 🎾 RAG | 🍔 Jina |     63.81     |
