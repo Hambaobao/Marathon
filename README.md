@@ -1,6 +1,8 @@
 # Marathon: A Race Through the Realm of Long Context with Large Language Models
 
-###### Paper coming soon ~
+<a href='https://arxiv.org/abs/2312.09542'><img src='https://img.shields.io/badge/Arxiv-Paper-red'></a>
+<a href='https://huggingface.co/datasets/Lemoncoke/Marathon'><img src='https://img.shields.io/badge/%F0%9F%A4%97_Hugging_Face-Dataset-green'></a>
+<a href='https://openbenchmark.online/marathon/'><img src='https://img.shields.io/badge/Online_Evaluation-Marathon-yellow'></a>
 
 ## Dataset Summary
 
@@ -193,4 +195,8 @@ When citing our work, please kindly consider citing the original dataset papers.
   year={2023}
 }
 ```
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Hambaobao/Marathon&type=Date)](https://star-history.com/#Hambaobao/Marathon&Date)
 
