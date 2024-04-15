@@ -80,11 +80,20 @@ model = AutoModelForCausalLM.from_pretrained(
     device_map='auto',
 ).eval()
 
+max_new_tokens = 32
+max_length = tokenizer.model_max_length - max_new_tokens
+tokenized_prompt = tokenizer(prompt, truncation=False, return_tensors="pt").input_ids[0]
+length = len(tokenized_prompt)
+if len(tokenized_prompt) > tokenizer.model_max_length - max_new_tokens:
+    half = max_length // 2
+    prompt = tokenizer.decode(tokenized_prompt[:half], skip_special_tokens=True) \
+        + tokenizer.decode(tokenized_prompt[-half:], skip_special_tokens=True)
+
 inputs = tokenizer(prompt, return_tensors="pt")
 
 outputs = model.generate(
     **inputs,
-    max_new_tokens=100,
+    max_new_tokens=max_new_tokens,
     do_sample=True,
     temperature=0.7,
     top_p=0.9,
