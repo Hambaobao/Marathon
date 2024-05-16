@@ -4,6 +4,10 @@
 <a href='https://huggingface.co/datasets/Lemoncoke/Marathon'><img src='https://img.shields.io/badge/%F0%9F%A4%97_Hugging_Face-Dataset-green'></a>
 <a href='https://openbenchmark.online/marathon/'><img src='https://img.shields.io/badge/Online_Evaluation-Marathon-yellow'></a>
 
+## Release
+- [2024/05/15] 🔥 [Marathon](https://huggingface.co/datasets/Lemoncoke/Marathon) is accepted by ACL 2024 Main Conference.
+
+
 ## Dataset Summary
 
 Marathon benchmark is a new long-context multiple-choice benchmark, mainly based on [LooGLE](https://github.com/bigai-nlco/LooGLE), with some original data from [LongBench](https://github.com/THUDM/LongBench). The context length can reach up to 200K+. Marathon benchmark comprises six tasks: *Comprehension and Reasoning*, *Multiple Information Retrieval*, *Timeline Reorder*, *Computation*, *Passage Retrieval*, and *Short Dependency Question Answering*. Each test case includes a Long Context, a question, and multiple candidate options. Large Language Models (LLMs) need to select the correct answer from the given options based on the Long Context in the test.
